@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/%7BC6B656E2-CD5C-44F8-A483-1C0CB841350B%7D.png)
+![](./images/%7BC6B656E2-CD5C-44F8-A483-1C0CB841350B%7D.jpg)
 
 ### Links
 
