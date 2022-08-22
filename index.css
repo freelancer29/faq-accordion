@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+    font-size: 12px;
+    font-weight: 400 700;
+}
+body {
+    background-color: hsl(273, 75%, 66%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    color: hsl(240, 6%, 50%);
+}
+
+#img3 {
+    z-index: 1;
+    width: 13rem;
+    height: 12rem;
+    position: absolute;
+    left: 19.5rem;
+    top: 23rem;
+}
+
+.container {
+    display: flex;
+    gap: 4rem;
+    border-radius: 2rem;
+    margin-top: 10rem;
+    width: 750px;
+    height: 400px;
+    background-color: white;
+    padding-right: 5rem;
+    overflow: hidden;
+    padding-top: 20px;
+    position: relative;
+    background-size: contain;
+    background-position-x: -6rem;
+    background-position-y: 3rem;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+#img1 {
+    width: 380px;
+    height: 270px;
+    margin-top: 3rem;
+    margin-left: -5rem;
+}
+h1 {
+    font-size: 2rem;
+}
+
+.sub_container {
+    padding: 35px 25px;
+    line-height: 1rem;
+    position: relative;
+}
+
+.faq {
+    margin-top: 2rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-bottom: 0.5rem;
+}
+.faq_input {
+    display: none;
+}
+
+.faq_content {
+    margin-top: 1rem;
+    display: none;
+}
+#faq1 {
+    margin-top: 4rem;
+}
+.faq_label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    transition: background 0.1s;
+}
+.faq_label::after {
+    content: "";
+    background-image: url(./images/icon-arrow-down.svg);
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    left: 25rem;
+    /* background-size: contain; */
+    transition: transform 0.4s;
+}
+.faq_input:checked ~ .faq_content {
+    display: block;
+}
+.faq_content {
+    margin-top: 1rem;
+}
+.faq_content p {
+    line-height: 1.3rem;
+}
+.faq_input:checked ~ .faq_label::after {
+    transform: rotate(180deg);
+}
+.faq_input:hover ~ .faq_label {
+    font-size: 13px;
+    color: black;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    .container {       
+        gap: 4rem;
+        border-radius: 2rem;
+        margin-top: 10rem;
+        max-width: 750px;
+        height: 400px;
+        background-color: white;
+        padding-right: 12rem;
+        padding-top: 20px;
+        position: relative;
+    }
+}
